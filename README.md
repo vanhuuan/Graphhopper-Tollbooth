@@ -12,9 +12,14 @@ toll:<transportation mode> = <toll-value>
 + `hgv` : Các loại xe tải, xe bán tải. Chưa có profile cho loại xe này.
 + `N2` : Các loại xe container nặng. Chưa có profile cho loại xe này.
 + `N3` : Các loại xe container nặng. Chưa có profile cho loại xe này.
-+ `CAR` : Xe ôtô.
++ `car` : Xe ôtô.
 ## Value:
 - Chỉ có thể là `yes/no`.
 - `yes` : Xe bị thu phí.
 - `no` : Xe không bị thu phí, là mặc định cho tất cả các loại xe.
 * Lưu ý, mỗi tag chỉ cho 1 loại xe.
+## Sử dụng trên Map4dSDK:
+- Sử dụng tương tự như tránh cầu,... với từ khóa `TOLL`.
+## Ví dụ của tag:
+- toll=yes : Thu phí tất cả các phương tiện đi qua kể cả đi bộ.
+- toll:car=yes : Thu phí tất cả các xe ô tô đi qua.
